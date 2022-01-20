@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors (Lizard Spock)</title>
+
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <button id="choiceRock" data-rps="rock">✊ Rock</button>
+    <button id="choicePaper" data-rps="paper">✋ Paper</button>
+    <button id="choiceScissors" data-rps="scissors">✌ Scissors</button>
+    <button id="choiceLizzard" data-rps="lizzard">🦎 Lizzard</button>
+    <button id="choiceSpock" data-rps="spock">🖖 Spock</button>
+    <p>
+      User Choice:
+      <output
+        for="choiceRock choicePaper choiceScissors"
+        data-rps-user-choice
+      ></output>
+    </p>
+    <p>Computer Choice: <output data-rps-computer-choice></output></p>
+    <p>Results: <output data-rps-results></output></p>
+  </body>
+</html>
